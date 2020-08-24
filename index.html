@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order your food and drinks here!</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img width="75%" src="https://img.icons8.com/dusk/64/000000/teddy-bear.png" alt="icon" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article id="about">
+                <h1>Welcome to Moka Cafe</h1>
+                <section id="about-content">
+                    <img src="assets/image/bear1.png">
+                    <p>Silahkan pesan melalui menu dibawah ini. Klik 'Add to Cart' untuk memasukan pada keranjang. Lalu checkout untuk mengonfirmasi pesanan Anda. </p>
+                </section>
+            </article>
+            <article id="order">
+                <h1>Order Your Foods and Drinks</h1>
+                <div id="order-container">
+                    <section id="burger" class="card1">
+                        <img class="product" src="assets/image/burger.png" alt="burger"><br>
+                        <p>burger</p>
+                        <p>IDR30K</p>
+                        <div class="order-button-group">
+                            <button class="burger btn min">- </button>
+                            <p class="burger qty">0</p>
+                            <p class="burger price" style="display:none">30000</p>
+                            <button class="burger btn plus">+</button>
+                        </div>
+                        <button class="burger btn add-to-cart-btn">Add to Cart</button>
+                    </section>
+                    <section id="coffee" class="card1">
+                        <img class="product" src="assets/image/coffee.png" alt="coffee"><br>
+                        <p>coffee</p>
+                        <p>IDR10K</p>
+                        <div class="order-button-group">
+                            <button class="coffee btn min">- </button>
+                            <p class="coffee qty">0</p>
+                            <p class="coffee price" style="display:none">30000</p>
+                            <button class="coffee btn plus">+</button>
+                        </div>
+                        <button class="coffee btn add-to-cart-btn">Add to Cart</button>
+                    </section>
+                    <section id="cola" class="card1">
+                        <img class="product" src="assets/image/cola.png" alt="cola"><br>
+                        <p>cola</p>
+                        <p>IDR18K</p>
+                        <div class="order-button-group">
+                            <button class="cola btn min">- </button>
+                            <p class="cola qty">0</p>
+                            <p class="cola price" style="display:none">30000</p>
+                            <button class="cola btn plus">+</button>
+                        </div>
+                        <button class="cola btn add-to-cart-btn">Add to Cart</button>
+                    </section>
+                    <section id="ice-cream" class="card1">
+                        <img class="product" src="assets/image/ice-cream.png" alt="ice cream"><br>
+                        <p>ice cream</p>
+                        <p>IDR25K</p>
+                        <div class="order-button-group">
+                            <button class="ice-cream btn min">- </button>
+                            <p class="ice-cream qty">0</p>
+                            <p class="ice-cream price" style="display:none">30000</p>
+                            <button class="ice-cream btn plus">+</button>
+                        </div>
+                        <button class="ice-cream btn add-to-cart-btn">Add to Cart</button>
+                    </section>
+                    <section id="macaron" class="card1">
+                        <img class="product" src="assets/image/macaron.png" alt="macaron"><br>
+                        <p>macaron</p>
+                        <p>IDR6K</p>
+                        <div class="order-button-group">
+                            <button class="macaron btn min">- </button>
+                            <p class="macaron qty">0</p>
+                            <p class="macaron price" style="display:none">30000</p>
+                            <button class="macaron btn plus">+</button>
+                        </div>
+                        <button class="macaron btn add-to-cart-btn">Add to Cart</button>
+                    </section>
+                    <section id="salad" class="card1">
+                        <img class="product" src="assets/image/salad.png" alt="salad"><br>
+                        <p>salad</p>
+                        <p>IDR20K</p>
+                        <div class="order-button-group">
+                            <button class="salad btn min">- </button>
+                            <p class="salad qty">0</p>
+                            <p class="salad price" style="display:none">30000</p>
+                            <button class="salad btn plus">+</button>
+                        </div>
+                        <button class="salad btn add-to-cart-btn">Add to Cart</button>
+                    </section>
+                </div>
+            </article>
+
+            <article id="cart">
+                <h1>Cart</h1>
+                <div id="cart-container">
+                    <!-- <section class="card1">
+                        <figure>
+                            <img class="product" src="assets/image/salad.png" alt="salad"><br>
+                            <figcaption>salad</figcaption>
+                        </figure>
+                        <div>
+                            <p>Quantity x</p>
+                            <p>1</p>
+                            <button class="btn delete-btn">delete</button>
+                        </div>
+                    </section> -->
+                </div>
+
+                <div>
+                    <h2>Total: </h2>
+                    <h2 id="total">0</h2>
+                    <div class="cart-button-group">
+                        <button class="btn checkout">Checkout</button>
+                        <button class="btn clear">Clear All</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <aside>
+            <article class="profile card2">
+                <section>
+                    <h2>Fiona Natasha Valentio</h2>
+                    <figure>
+                        <img src="assets/image/fiona.jpg" class="">
+                        <figcaption>Owner of the website.</figcaption>
+                    </figure>
+
+                    <h3>Biodata</h3>
+                    <table>
+                        <tr>
+                            <th>Date of birth</th>
+                            <td>28-12-1996</td>
+                        </tr>
+                        <tr>
+                            <th>Current Occupation</th>
+                            <td>Java Backend Developer</td>
+                        </tr>
+                        <tr>
+                            <th>Proficient Language</th>
+                            <td>Indonesian and English</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+    <footer>
+        <a href="https://icons8.com/icon/46873/teddy-bear">Teddy Bear icon by Icons8</a>
+    </footer>
+
+    <script src="assets/storage.js"></script>
+    <script src="assets/cafe.js"></script>
+
+</body>
+
+</html>
